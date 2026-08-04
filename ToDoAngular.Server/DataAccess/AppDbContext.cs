@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+
 namespace ToDoAngular.Server.DataAccess
 {
     public class AppDbContext: DbContext

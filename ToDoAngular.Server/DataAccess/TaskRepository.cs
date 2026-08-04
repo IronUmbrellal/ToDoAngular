@@ -1,6 +1,6 @@
 ﻿using ToDoAngular.Server.DataAccess;
-using ToDoAngular.Server.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using ToDoAngular.Server.Interfaces;
 namespace ToDoAngular.Server.DataAccess
 
 {

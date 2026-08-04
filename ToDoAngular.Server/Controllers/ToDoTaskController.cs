@@ -1,12 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ToDoAngular.Server.DataAccess;
 
 namespace ToDoAngular.Server.Controllers
 {
-    public class ToDoTaskController : Controller
+    [ApiController]
+    [Route("api/[todotasks]")]
+    public class ToDoTaskController : ControllerBase
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        private readonly TaskRepository _task;
+
+        public ToDoTaskController(TaskRepository task) { _task = task; }
+
+
     }
 }
